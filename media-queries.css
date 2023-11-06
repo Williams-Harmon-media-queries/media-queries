@@ -1,3 +1,224 @@
-.nav-links{
+@media screen and (min-width: 500px){
+    *{
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+    }
+    body {
+        color: black;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        margin:0;
 
+    }
+    img {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        height: 339px;
+        width: 100%;
+    }
+    .alert-info {
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+    }
+
+    .alert-info a{
+         background-color: black;
+         text-decoration: none;
+         color: white;
+         padding: 1em 0;
+         border:.1em solid lightgray;
+         font-weight: bold;
+
+
+     }
+
+    .hidden-on-desktop{
+        list-style: none;
+        text-decoration: none;
+        align-items: center;
+
+    }
+
+    h1 {
+        display: flex;
+        font-size: 3em;
+        align-items: center;
+        justify-content:center;
+        color: black;
+        margin:0;
+        padding-bottom: .5em;
+    }
+    .nav-links{
+        flex-direction: column;
+        list-style: none;
+        margin:auto;
+
+
+    }
+
+    li{
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        padding: 1em;
+        margin: 1em;
+        justify-content: center;
+
+    }
+    a{
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+    .main {
+       display: flex;
+       flex-wrap: wrap;
+        margin-left: 2%;
+
+    }
+    h2 {
+        margin-bottom: 1em;
+    }
+    .sub-section{
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+    footer{
+        padding-top:10em;
+        margin-bottom: 0;
+        margin-top: 3em;
+        display: flex;
+        flex-direction: column;
+    }
+    #social-media-links{
+        flex-direction: column;
+        padding-bottom: 15em;
+    }
 }
+/*HAS MAX-WIDTH OF 1200PX*/
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+    *{
+        box-sizing: border-box;
+        margin:0;
+        padding:0;
+    }
+
+    body {
+        color: rgba(64, 20, 20, 0.74);
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        background-color: palevioletred;
+
+    }
+
+    img {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        height: 339px;
+        width: 100%;
+    }
+
+    .alert-info {
+        display: none;
+
+    }
+
+    h1 {
+        display: flex;
+        font-size: 3em;
+        align-items: center;
+        justify-content: flex-start;
+        color: black;
+        margin: 0;
+        padding: .7em;
+    }
+    nav {
+        position: absolute;
+        display: flex;
+        align-self: flex-end;
+        top: 4%;
+        width: 50%;
+        right: 0;
+       margin-right: -10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+
+    li {
+        display: flex;
+        background-color: transparent;
+        color: black;
+        font-weight: bold;
+        padding: 8px;
+        margin: 8px;
+        margin-right: 12%;
+        padding-right: -4px;
+
+
+    }
+    #main.main {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1em;
+        float:left;
+        width: 55%;
+        margin-left: 2%;
+
+    }
+
+        a {
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+
+    h2 {
+        margin-bottom: 2em;
+
+    }
+
+        .sub-section {
+            display: flex;
+            position: absolute;
+            top: 53%;
+            align-self: flex-end;
+            font-style: italic;
+            width:40%;
+
+        }
+
+        .sub-section h2{
+            position: absolute;
+            top: -1%;
+            justify-content: center;
+
+        }
+        .sub-section p{
+            margin-top:20%;
+        }
+        footer {
+            padding-top: 10em;
+            margin-bottom: 0;
+            margin-top: 3em;
+            display: flex;
+            flex-direction: column;
+        }
+        #social-media-links {
+            display: none;
+            flex-direction: row;
+            justify-content: flex-end;
+            padding-bottom: 1em;
+            position: relative;
+            bottom: 10%;
+        }
+    }
